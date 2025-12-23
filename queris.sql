@@ -22,7 +22,7 @@ select
   v.type,
   v.model,
   v.registration_number,
-  v.price_per_day,
+  v.rental_price,
   v.status
 from vehicles v
 where not exists (
@@ -40,7 +40,7 @@ select
   type,
   model,
   registration_number,
-  price_per_day,
+  rental_price,
   status
 from vehicles
 where type = 'car'
